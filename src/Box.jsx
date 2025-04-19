@@ -15,9 +15,11 @@ export default function Box() {
 
     return (
         <>
+            <h3>check console.log</h3>
             <input name="myInput" value={inputValue} onChange={handleChange}/>
-            <button onClick={()=>console.log('haha')}>test</button>
-            <button onClick={()=>log(inputValue)}>test2</button>
+            <br/>
+            <button onClick={()=>console.log('haha')}>log haha</button>
+            <button onClick={()=>log(inputValue)}>log input value</button>
         </>
     );
 }
